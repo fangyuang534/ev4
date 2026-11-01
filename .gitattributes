@@ -1,0 +1,11 @@
+# 统一换行符，避免跨平台协作时的 CRLF/LF 差异
+* text=auto
+
+# 二进制文件（禁止 Git 做任何换行转换或 diff）
+*.pt    binary
+*.onnx  binary
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.docx  binary
+*.pdf   binary

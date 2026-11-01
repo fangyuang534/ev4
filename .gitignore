@@ -1,0 +1,35 @@
+# ---- 模型权重（体积过大，GitHub 单文件上限 100MB）----
+# 用 part1_opencv_dnn/download_models.py 一键下载
+part1_opencv_dnn/models/*.weights
+part1_opencv_dnn/models/*.caffemodel
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# ---- 训练产物（可选保留，默认忽略中间大文件）----
+part2_yolo26/runs/**/weights/last.pt
+part2_yolo26/dataset/images/*/aug_*.jpg.bak
+# ultralytics 自动生成的训练配置快照，内含本机绝对路径，不适合提交
+part2_yolo26/runs/**/args.yaml
+# 数据集配置含本机绝对路径，由 task2_train.py 在运行时自动生成
+part2_yolo26/dataset/data.yaml
+
+# ---- 工具/缓存 ----
+.workbuddy/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# ---- 报告生成中间产物 ----
+output/
+
+# ---- 作业原件与本地报告（本机保留，不随仓库提交）----
+实验4 目标检测案例练习.docx
+实验4 实验报告.docx
+GitHub上传指南.md

@@ -1,0 +1,10 @@
+# 实验4 目标检测案例练习 - 依赖清单
+# 安装： pip install -r requirements.txt
+# 注意：OpenCV 必须为 4.x（5.0 起移除了 readNetFromDarknet / readNetFromCaffe）
+
+opencv-python==4.14.0.94
+numpy>=1.26,<3
+
+# 内容2（YOLO26）所需；torch 会随 ultralytics 自动安装
+ultralytics>=8.4.0
+torch>=2.0
